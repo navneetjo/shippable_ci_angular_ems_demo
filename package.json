@@ -34,6 +34,7 @@
     "supertest": "^1.0.1"
   },
   "dependencies": {
+    "jshint-html-reporter": "^0.2.4",
     "mochawesome": "^1.2.1"
   }
 }

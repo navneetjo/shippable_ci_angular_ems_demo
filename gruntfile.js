@@ -31,7 +31,12 @@ grunt.initConfig({
 				jshint: {
 						files: ['viewAll.js','/public/html/*.js'],
 							options:{
-										globals:{
+										reporter:require('jshint-html-reporter'),
+										reporterOutput:'jshint-report.html',
+										
+
+
+											globals:{
 													jQuery: true,
 													reporteroutput : 'jshint-stylish'
 												}
