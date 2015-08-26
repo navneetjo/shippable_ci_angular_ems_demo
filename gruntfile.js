@@ -225,6 +225,6 @@ grunt.loadNpmTasks('mochawesome');
 grunt.loadNpmTasks('grunt-mocha-test');
 //////////////////////register the tasks////////////////
 //grunt.registerTask('default', ['jshint','concat','simplemocha']);
-grunt.registerTask('default', ['jshint','clean','minified','uglify','nightwatch','nightwatch_report']);
+grunt.registerTask('default', ['clean','jshint','minified','uglify','mochaTest','mocha_istanbul']);
 
 };
