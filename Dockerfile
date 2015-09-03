@@ -1,13 +1,9 @@
-FROM www.cybage-docker-registry.com:9080/jenkins_node_slave:1.2
+FROM www.cybage-docker-registry.com:9080/jenkins_node_slave:1.3
 
 #making working directory
 RUN mkdir -p /data/angularApp
 # Define working directory.
 WORKDIR /data/angularApp
-
-
-#install grunt for ci
-RUN npm install grunt
 
 #copy soruce code
 ADD bin bin
