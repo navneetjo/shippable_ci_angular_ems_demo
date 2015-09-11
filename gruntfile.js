@@ -252,4 +252,6 @@ grunt.loadNpmTasks('grunt-mocha-test');
 //grunt.registerTask('default', ['jshint','concat','simplemocha']);
 grunt.registerTask('default', ['clean','jshint','minified','uglify','mochaTest','mocha_istanbul']);
 
+grunt.registerTask('cdNightwatch', ['nightwatch','nightwatch_report']);
+
 };
