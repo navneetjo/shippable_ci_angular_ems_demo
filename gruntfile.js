@@ -48,7 +48,9 @@ grunt.initConfig({
 									standalone: true,
 									jar_path: './selenium-server-standalone-2.47.1',
 									
-																						
+																					src_folders: ['tests/emsTestSuite/*'],
+  							output_folder: 'reports/emsTestSuiteReports'
+
 							},
 					
 				nightwatch_report: {
@@ -85,7 +87,25 @@ grunt.initConfig({
            								 }				
 									
 
-						}
+						},
+run_java : {
+
+		options: { //Default is true 
+      stdout: false,
+      stderr: false,
+      stdin: false,
+      failOnError: false
+    },
+ shell: {
+        multiple: {
+            command: [
+                'java -jar selenium-server-standalone-2.47.1.jar ',
+                'node nightwatch',
+            ].join('&&')
+        }
+    }
+	
+	}
 				/*
 				mocha: 	{
 						test: {
@@ -222,7 +242,7 @@ grunt.loadNpmTasks('grunt-contrib-jshint');
 grunt.loadNpmTasks('grunt-nightwatch');
 grunt.loadNpmTasks('grunt-nightwatch-report');
 grunt.loadNpmTasks('grunt-mocha-istanbul');
-
+grunt.loadNpmTasks('grunt-run-java');
 
 
 grunt.loadNpmTasks('mochawesome');
