@@ -21,6 +21,7 @@
     "grunt-mocha-test": "^0.12.7",
     "grunt-nightwatch": "^0.4.8",
     "grunt-nightwatch-report": "^0.1.6",
+    "grunt-nodemon": "^0.4.0",
     "grunt-run-java": "^0.1.1",
     "grunt-simple-mocha": "^0.4.0",
     "istanbul": "^0.3.18",

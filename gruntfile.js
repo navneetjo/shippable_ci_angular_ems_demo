@@ -105,7 +105,12 @@ run_java : {
         }
     }
 	
-	}
+	},
+nodemon: {
+  dev: {
+    script: 'viewAll.js'
+  }
+}
 				/*
 				mocha: 	{
 						test: {
@@ -244,7 +249,7 @@ grunt.loadNpmTasks('grunt-nightwatch-report');
 grunt.loadNpmTasks('grunt-mocha-istanbul');
 grunt.loadNpmTasks('grunt-run-java');
 
-
+grunt.loadNpmTasks('grunt-nodemon');
 grunt.loadNpmTasks('mochawesome');
 //grunt.loadNpmTasks('good-mocha-html-reporter');
 grunt.loadNpmTasks('grunt-mocha-test');
@@ -253,5 +258,6 @@ grunt.loadNpmTasks('grunt-mocha-test');
 grunt.registerTask('default', ['clean','jshint','minified','uglify','mochaTest','mocha_istanbul']);
 
 grunt.registerTask('cdNightwatch', ['nightwatch','nightwatch_report']);
+grunt.registerTask('run', ['nodemon']);
 
 };
