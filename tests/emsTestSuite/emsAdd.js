@@ -1,7 +1,7 @@
 module.exports = {
   'Test for EMS-APPLICATION' : function (client) {
     client
-      .url('http://localhost:3000/#/postData')
+      .url('http://172.27.59.166:3000/#/postData')
       .waitForElementVisible('body', 1000)
       .assert.title('Employee Application')
       .assert.visible('input')
@@ -14,7 +14,7 @@ module.exports = {
   },
   'List of Employees' : function(client,browser){
 	  client
-	  .url('http://localhost:3000/#/getData')
+	  .url('http://172.27.59.166:3000/#/getData')
 	  .waitForElementVisible('body', 1000)
 	  .assert.title('Employee Application')
 	/*
