@@ -48,13 +48,13 @@ grunt.initConfig({
 									standalone: true,
 									jar_path: './selenium-server-standalone-2.47.1',
 									
-																					src_folders: ['tests/emsTestSuite/*'],
-  							output_folder: 'reports/emsTestSuiteReports'
+																					src_folders: ['tests/emsTestSuite/*.js'],
+  							output_folder: 'reports/emsTestSuite'
 
 							},
 					
 				nightwatch_report: {
-						files: ['reports/emsTestSuiteReports/*.xml'],
+						files: ['reports/emsTestSuite/*.xml'],
 									options: {
 												outputDir: 'nightwatchReports/html-reports'
 											 }

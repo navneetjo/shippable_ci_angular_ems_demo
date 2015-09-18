@@ -5,9 +5,9 @@
 
   <testsuite name="emsDelete"
     errors="0" failures="1" hostname="" id="" package="emsDelete" skipped="0"
-    tests="1" time="7.884" timestamp="Wed, 16 Sep 2015 12:44:52 GMT">
+    tests="1" time="5.413" timestamp="Fri, 18 Sep 2015 12:18:53 GMT">
   
-    <testcase name="Delete Test for EMS-APPLICATION" time="7.884" assertions="4">
+    <testcase name="Delete Test for EMS-APPLICATION" time="5.413" assertions="4">
 
     
 
@@ -27,6 +27,9 @@
 
     
     </testcase>
+      <system-err>
+        Unable to locate element: &quot;body &gt; div.ng-scope &gt; div &gt; div &gt; table &gt; thead &gt; tr.ng-scope &gt; td:nth-child(1)&quot; using: css selector
+      </system-err>
   
   
   </testsuite>

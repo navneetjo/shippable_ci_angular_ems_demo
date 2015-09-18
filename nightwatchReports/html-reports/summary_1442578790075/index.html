@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nighwatch.js Testing Summary</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load('visualization', '1', {packages:['corechart']});
+      google.setOnLoadCallback(drawSummaryChart);
+      function drawSummaryChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Result', 'Number of Tests'],
+          ['Success', 0],
+          ['Failure', 0],
+        ]);
+        var options = {
+          'chartArea': {'width': '90%', 'height': '90%'},
+          'legend': 'none',
+          colors: ['#d6e9c6', '#ebccd1', '#faebcc']
+        };
+        var chart = new google.visualization.PieChart(document.getElementById('summaryPieChart'));
+        chart.draw(data, options);
+      }
+      
+    </script>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div class="container">
+        <h1>Nightwatch.js Testing Summary</h1>
+        <p>
+           
+          This report summarizes a series of automated Nightwatch.js test suites.  This report was generated  <span>9/18/2015, 5:49:50 PM</span>.
+        </p>
+      </div>
+    </div>
+    <div class="container">
+      <div style="text-align: center;" class="row">
+        <div id="summaryPieChart" style="width: 250px; height: 250px; display: inline-block; margin-left: auto; margin-right: auto;"></div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2>Test Suites</h2>
+          <p>
+             
+            A total of <span>0</span> test suites were executed.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h2>Success</h2>
+          <p><span>0</span> of those test suites were successful. </p>
+        </div>
+        <div class="col-md-4">
+          <h2>Failures</h2>
+          <p><span>0</span> of those test suites failed.</p>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top: 20px;" class="container">
+      <div class="page-header">
+        <h1>Test Suites</h1>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+  </body>
+</html>
