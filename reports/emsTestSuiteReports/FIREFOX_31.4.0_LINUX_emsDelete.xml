@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuites errors="0"
+<testsuites errors="1"
             failures="1"
             tests="1">
 
   <testsuite name="emsDelete"
-    errors="0" failures="1" hostname="" id="" package="emsDelete" skipped="0"
-    tests="1" time="5.413" timestamp="Fri, 18 Sep 2015 12:18:53 GMT">
+    errors="1" failures="1" hostname="" id="" package="emsDelete" skipped="0"
+    tests="1" time="5.426" timestamp="Fri, 18 Sep 2015 12:50:15 GMT">
   
-    <testcase name="Delete Test for EMS-APPLICATION" time="5.413" assertions="4">
+    <testcase name="Delete Test for EMS-APPLICATION" time="5.426" assertions="4">
 
     
 
@@ -29,6 +29,7 @@
     </testcase>
       <system-err>
         Unable to locate element: &quot;body &gt; div.ng-scope &gt; div &gt; div &gt; table &gt; thead &gt; tr.ng-scope &gt; td:nth-child(1)&quot; using: css selector
+Unable to locate element: &quot;body &gt; div.ng-scope &gt; div &gt; div &gt; table &gt; thead &gt; tr:nth-child(2) &gt; td:nth-child(5) &gt; input&quot; using: css selector
       </system-err>
   
   
