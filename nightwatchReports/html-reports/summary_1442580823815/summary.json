@@ -1,0 +1,68 @@
+{
+    "numTests": 2,
+    "numFailures": 1,
+    "numSuccess": 1,
+    "summaryReportGenDateTime": "9/18/2015, 6:23:43 PM",
+    "suites": [
+        {
+            "file": "reports/emsTestSuiteReports/FIREFOX_31.4.0_LINUX_emsAdd.xml",
+            "name": "emsAdd",
+            "numTests": 2,
+            "numSkipped": 0,
+            "numFailures": 0,
+            "numErrors": 0,
+            "package": "emsAdd",
+            "executionTime": 5.134,
+            "timestamp": "Fri, 18 Sep 2015 12:53:02 GMT",
+            "cases": [
+                {
+                    "name": "Test for EMS-APPLICATION",
+                    "numFailures": 0,
+                    "failures": [],
+                    "numSkipped": 0,
+                    "skipped": [],
+                    "executionTime": 4.661,
+                    "numAssertions": 4
+                },
+                {
+                    "name": "List of Employees",
+                    "numFailures": 0,
+                    "failures": [],
+                    "numSkipped": 0,
+                    "skipped": [],
+                    "executionTime": 0.473,
+                    "numAssertions": 3
+                }
+            ]
+        },
+        {
+            "file": "reports/emsTestSuiteReports/FIREFOX_31.4.0_LINUX_emsDelete.xml",
+            "name": "emsDelete",
+            "numTests": 1,
+            "numSkipped": 0,
+            "numFailures": 1,
+            "numErrors": 0,
+            "package": "emsDelete",
+            "executionTime": 4.601,
+            "timestamp": "Fri, 18 Sep 2015 12:53:07 GMT",
+            "cases": [
+                {
+                    "name": "Delete Test for EMS-APPLICATION",
+                    "numFailures": 1,
+                    "failures": [
+                        {
+                            "message": {
+                                "message": "Failed [equal]: ('4444' == 'body > div.ng-scope > div > div > table > thead > tr:nth-child(2) > td:nth-child(1)')"
+                            },
+                            "details": "Failed [equal]: ('4444' == 'body > div.ng-scope > div > div > table > thead > tr:nth-child(2) > td:nth-child(1)'): Expected \"body > div.ng-scope > div > div > table > thead > tr:nth-child(2) > td:nth-child(1)\" but got: \"4444\"\n    at Object.equal (/home/student/angularEmsApp/node_modules/nightwatch/lib/core/api.js:67:24)\n    at Object.<anonymous> (/home/student/angularEmsApp/tests/emsTestSuite/emsDelete.js:11:17)\n    at Object.<anonymous> (/home/student/angularEmsApp/node_modules/nightwatch/lib/api/element-commands.js:354:20)\n    at HttpRequest.<anonymous> (/home/student/angularEmsApp/node_modules/nightwatch/lib/index.js:311:20)\n    at HttpRequest.emit (events.js:110:17)\n    at HttpRequest.<anonymous> (/home/student/angularEmsApp/node_modules/nightwatch/lib/index.js:334:15)\n    at HttpRequest.emit (events.js:118:17)\n    at IncomingMessage.<anonymous> (/home/student/angularEmsApp/node_modules/nightwatch/lib/http/request.js:148:16)\n    at IncomingMessage.emit (events.js:129:20)\n    at _stream_readable.js:908:16"
+                        }
+                    ],
+                    "numSkipped": 0,
+                    "skipped": [],
+                    "executionTime": 4.601,
+                    "numAssertions": 4
+                }
+            ]
+        }
+    ]
+}
