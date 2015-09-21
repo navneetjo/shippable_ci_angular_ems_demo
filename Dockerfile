@@ -10,6 +10,7 @@ ADD bin bin
 ADD CentOS_registry_setup CentOS_registry_setup
 ADD connection connection
 ADD coverage coverage
+ADD gatling-charts-highcharts-bundle-2.1.7 gatling-charts-highcharts-bundle-2.1.7
 ADD js js
 ADD min min
 ADD mochawesome-reports mochawesome-reports
