@@ -7,7 +7,7 @@ import scala.concurrent.duration._
 class AngularNodeEmsSimulation extends Simulation {
 
   val httpConf = http
-    .baseURL("http://172.27.59.166:3000")
+    .baseURL("http://localhost:3000")
     .acceptHeader("application/json,text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8") // Here are the common headers
     .doNotTrackHeader("1")
     .acceptLanguageHeader("en-US,en;q=0.5")
