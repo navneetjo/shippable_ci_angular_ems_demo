@@ -22,7 +22,7 @@ class AngularNodeEmsSimulation extends Simulation {
 .exec(
     http("get request")
       .get("/getData"))
-.pause(1)
+.pause(2)
 
   setUp(scn.inject(atOnceUsers(200)).protocols(httpConf))
 } 
