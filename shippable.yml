@@ -1,0 +1,19 @@
+# language setting
+language: node_js
+
+# version numbers
+node_js:
+  - "0.12"
+  
+  before_install:
+# Activate the required node.js version. $SHIPPABLE_NODE_VERSION for this sample is 0.10.24
+  - node --version
+  - npm install -g grunt-cli
+  
+  # 'npm install' is executed by default in Shippable - shown here for illustrative purposes
+install:
+  -npm install
+  
+  # Running npm test to run your test cases
+script:
+    - grunt
