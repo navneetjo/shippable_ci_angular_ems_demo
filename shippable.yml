@@ -12,7 +12,7 @@ before_install:
   
   # 'npm install' is executed by default in Shippable - shown here for illustrative purposes
 install:
-  -npm install
+  - npm install
   
   # Running npm test to run your test cases
 script:
